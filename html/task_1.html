@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB_1</title>
     <link rel="stylesheet" href="../styles/styles.css" />
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header class="section header">
@@ -25,79 +26,50 @@
         </ul>
       </div>
     </header>
-    <div class="section">
-      <div class="container">
-        <table class="task1_table">
-          <thead>
-            <tr>
-              <th colspan="11">
-                n=9 , t<span style="font-size: 12px">обс</span>=10
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ітерація</td>
-
-              <td colspan="4">Основні</td>
-              <td colspan="5">Похідні</td>
-              <td>Розрядність</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>λ</td>
-              <td>α</td>
-              <td>P<span style="font-size: 12px">0</span></td>
-              <td>P<span style="font-size: 12px">n</span></td>
-              <td>P<span style="font-size: 12px">обс</span></td>
-              <td>N<span style="font-size: 12px">k</span></td>
-              <td>K<span style="font-size: 12px">3</span></td>
-              <td>N<span style="font-size: 12px">0</span></td>
-              <td>K<span style="font-size: 12px">п</span></td>
-              <td>n</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div style="margin-top: 50px">
+      <canvas id="myChart" width="800" height="600"></canvas>
     </div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+      "
+    >
+      <table>
+        <thead>
+          <tr>
+            <td colspan="10" style="text-align: center; font-weight: 600">
+              n=10 | tобс=10 | λ=110
+            </td>
+          </tr>
+          <tr>
+            <td>ітерація</td>
+            <td>λ</td>
+            <td>α</td>
+            <td>P0</td>
+            <td>Pn</td>
+            <td>Pobs</td>
+            <td>Nk</td>
+            <td>Kз</td>
+            <td>N0</td>
+            <td>розрядність</td>
+          </tr>
+        </thead>
+        <tbody id="tableInfo"></tbody>
+      </table>
+      <p
+        id="textAnswer"
+        style="
+          max-width: 1300px;
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 50px;
+        "
+      ></p>
+    </div>
+    <script src="../scripts/task_1.js"></script>
   </body>
 </html>
