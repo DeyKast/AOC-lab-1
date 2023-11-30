@@ -4,7 +4,6 @@ let results = [[], []];
 let allResultsRenderMarkup = "";
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Функція для обчислення факторіалу
   function factorial(number) {
     let f = 1;
     for (let i = 1; i <= number; i++) {
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tableInfo.innerHTML += allResultsRenderMarkup;
   }
 
-  // Головна функція
   function main() {
     const t = 0.1;
     const lmbd = 110;
@@ -89,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     resultsRender();
-    // Побудова графіка за допомогою Chart.js
+
     const ctx = document.getElementById("myChart").getContext("2d");
     const myChart = new Chart(ctx, {
       type: "line",
@@ -152,6 +150,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Виклик головної функції при завантаженні сторінки
   main();
 });
