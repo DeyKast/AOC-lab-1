@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -27,8 +28,47 @@
     </header>
     <div class="section">
       <div class="container">
-        <h1>TASK 4 ERROR !</h1>
+        <div style="margin-top: 50px">
+          <canvas id="myChart" width="800" height="600"></canvas>
+        </div>
       </div>
     </div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+      "
+    >
+      <table>
+        <thead>
+          <tr>
+            <td colspan="10" style="text-align: center; font-weight: 600">
+              P^λ обс зд = 0.899 | n = 9 | t обс = 10
+            </td>
+          </tr>
+          <tr>
+            <td>iteration</td>
+            <td>P^λ обс зд</td>
+            <td>λ</td>
+            <td>P обс</td>
+            <td>t обс</td>
+          </tr>
+        </thead>
+        <tbody id="tableInfo"></tbody>
+      </table>
+      <p
+        id="textAnswer"
+        style="
+          max-width: 1300px;
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 50px;
+        "
+      ></p>
+    </div>
+    <script src="../scripts/task_4.js"></script>
   </body>
 </html>

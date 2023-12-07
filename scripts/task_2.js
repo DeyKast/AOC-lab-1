@@ -97,7 +97,7 @@ function main() {
         працюватиме найоптимальніше.  `;
   textAnswerContainer.innerHTML += textAnswer;
 }
-
+//функція виведення результатів у таблицю
 function resultsRender() {
   for (let i = 1; i < results.length; i++) {
     const markupResults = `<tr>
